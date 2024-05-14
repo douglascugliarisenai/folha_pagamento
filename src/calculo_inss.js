@@ -1,4 +1,4 @@
-function calculoInss(salario) {
+module.exports = function calculoInss(salario) {
  if (salario <= 1412.0) {
   return salario * 0.08;
  } else if (salario >= 1412.0 && salario <= 2666.68) {
@@ -10,4 +10,4 @@ function calculoInss(salario) {
    1412.81 * 0.08 + (salario - 1412.81) * 0.09 + (salario - 2666.68) * 0.11
   );
  }
-}
+};
