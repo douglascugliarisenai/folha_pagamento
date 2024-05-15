@@ -13,8 +13,9 @@ let funcionario = {
 };
 
 funcionario.nome = prompt("Digite seu nome: ");
-funcionario.cpf = prompt("Qual o CPF?");
-funcionario.salario = prompt("Qual o Salário Bruto?");
+funcionario.cpf = prompt("Digite o CPF: ");
+funcionario.mes = prompt("Digite o mês do pagamento: ");
+funcionario.salario = prompt("Digite o salario Bruto: ");
 
 funcionario.impostoRenda = calcularImpostoRenda(funcionario.salario);
 funcionario.inss = calculoInss(funcionario.salario);
@@ -27,4 +28,5 @@ console.log(`Salario Bruto: ${funcionario.salario}`);
 console.log(`Imposto de Renda: ${funcionario.impostoRenda}`);
 console.log(`INSS: ${funcionario.inss.toFixed(2)}`);
 console.log(`Salario Liiquido: ${funcionario.salarioLiquido.toFixed(2)}`);
+console.log(`Mês do pagamento: ${funcionario.mes}`);
 console.log("------ Folha de Pagamento -----");
